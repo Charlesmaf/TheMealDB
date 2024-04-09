@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TheMealDB.Maui.Views.RecipePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="RecipePage">
+
+    <ScrollView>
+        <StackLayout Padding="10">
+            <Frame
+                Padding="10"
+                BackgroundColor="White"
+                CornerRadius="10"
+                HasShadow="True">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="100*" />
+                    </Grid.ColumnDefinitions>
+                    <Image
+                        x:Name="MealImage"
+                        HeightRequest="50"
+                        WidthRequest="50" />
+                    <StackLayout Grid.Column="1">
+                        <Label x:Name="MealName" FontSize="20" />
+                        <Label x:Name="Instructions" FontSize="16" />
+                    </StackLayout>
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

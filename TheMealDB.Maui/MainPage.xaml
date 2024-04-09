@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TheMealDB.Maui.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:TheMealDB.Core.ViewModel">
+    <ContentPage.BindingContext>
+        <vm:MainPageViewModel />
+    </ContentPage.BindingContext>
+    <ScrollView>
+        <CollectionView
+            x:Name="collectionViewData"
+            Margin="20"
+            ItemsSource="{Binding Categories}"
+            SelectedItem="{Binding strCategory, Mode=TwoWay}"
+            SelectionChanged="OnSelectionChanged"
+            SelectionMode="Single">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="20,0,0,0" ColumnDefinitions="0.9*, 0.1*">
+                        <Label Text="{Binding strCategory}" VerticalTextAlignment="Center" />
+                        <Image
+                            Grid.Column="1"
+                            HorizontalOptions="End"
+                            Source="{Binding strCategoryThumb}" />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </ScrollView>
+
+</ContentPage>

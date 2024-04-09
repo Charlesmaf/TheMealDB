@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheMealDB.Maui", "TheMealDB.Maui\TheMealDB.Maui.csproj", "{048D6657-229B-4BBB-88E9-7FB5ADC7E655}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheMealDB.Core", "TheMealDB.Core\TheMealDB.Core.csproj", "{1CDF7E72-3F83-43A0-85CF-C1B195902117}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TheMealDB.Test", "TheMealDB.Test", "{2ABF03DF-03B0-4C2E-8D97-238787A125A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheMealBD.UnitTests", "TheMealBD.UnitTests\TheMealBD.UnitTests.csproj", "{B1DE9032-3553-46CB-839B-AD94639DD390}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{048D6657-229B-4BBB-88E9-7FB5ADC7E655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{048D6657-229B-4BBB-88E9-7FB5ADC7E655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{048D6657-229B-4BBB-88E9-7FB5ADC7E655}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{048D6657-229B-4BBB-88E9-7FB5ADC7E655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{048D6657-229B-4BBB-88E9-7FB5ADC7E655}.Release|Any CPU.Build.0 = Release|Any CPU
+		{048D6657-229B-4BBB-88E9-7FB5ADC7E655}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1CDF7E72-3F83-43A0-85CF-C1B195902117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CDF7E72-3F83-43A0-85CF-C1B195902117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CDF7E72-3F83-43A0-85CF-C1B195902117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CDF7E72-3F83-43A0-85CF-C1B195902117}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1DE9032-3553-46CB-839B-AD94639DD390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1DE9032-3553-46CB-839B-AD94639DD390}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1DE9032-3553-46CB-839B-AD94639DD390}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1DE9032-3553-46CB-839B-AD94639DD390}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B1DE9032-3553-46CB-839B-AD94639DD390} = {2ABF03DF-03B0-4C2E-8D97-238787A125A4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7E44851-D8F3-4346-8589-69779F771151}
+	EndGlobalSection
+EndGlobal
